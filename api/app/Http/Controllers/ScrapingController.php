@@ -55,10 +55,10 @@ class ScrapingController extends Controller
   public function scraping()
   {
       $sites = [
-        new Site('Qiita(Trends)', 'https://qiita.com', '', 'article.css-18gxgni', 'h2.css-1fhgjcy a', 0),
-        new Site('Qiita(JS)', 'https://qiita.com/tags/javascript', '', 'article', 'h2.css-1fhgjcy a', 0),
-        new Site('Qiita(CSS)', 'https://qiita.com/tags/css', '', 'article', 'h2.css-1fhgjcy a', 0),
-        new Site('Qiita(Node.js)', 'https://qiita.com/tags/node.js', '', 'article', 'h2.css-1fhgjcy a', 0),
+        new Site('Qiita(JS)', 'https://qiita.com/tags/javascript', '', 'article', 'h2 a', 0),
+        new Site('Qiita(CSS)', 'https://qiita.com/tags/css', '', 'article', 'h2 a', 0),
+        new Site('Qiita(Node.js)', 'https://qiita.com/tags/node.js', '', 'article', 'h2 a', 0),
+        new Site('dev.to', 'https://dev.to', '', '.crayons-story', '.crayons-story__title a', 0),
       ];
 
       return $sites;
